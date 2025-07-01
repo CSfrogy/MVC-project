@@ -70,9 +70,9 @@ trait Model
 
         $query = "INSERT INTO $this->table (" . implode(",", $keys) . ") values (:" . implode(",:", $keys) . ")";
 
-        $this->query($query, $data);
+        return $this->query($query, $data);
 
-        return false;
+
     }
 
     public function update($id, $data, $id_column = 'id')

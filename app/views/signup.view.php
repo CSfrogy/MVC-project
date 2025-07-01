@@ -117,7 +117,7 @@
 
     <!-- Sign-in Form -->
     <main class="form-signin w-100 m-auto">
-    <form method="post">
+    <form method="POST">
 
         <?php if (! empty($errors)): ?>
             <div class="alert alert-danger">

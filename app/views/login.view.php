@@ -117,7 +117,7 @@
 
     <!-- Sign-in Form -->
     <main class="form-signin w-100 m-auto">
-    <form method="post">
+    <form method="POST">
         <div class="text-center">
             <h1 class="h3 mb-3 fw-normal">Please login</h1>
         </div>
