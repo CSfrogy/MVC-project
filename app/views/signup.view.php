@@ -136,7 +136,7 @@
             </li>
             <li>
                 <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                    <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+                    <svg class="biname = "email" me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
                     Auto
                     <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
                 </button>
@@ -146,18 +146,18 @@
 
     <!-- Sign-in Form -->
     <main class="form-signin w-100 m-auto">
-    <form>
+    <form method="post">
         <div class="text-center">
             <h1 class="h3 mb-3 fw-normal">Create account</h1>
         </div>
         
         <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input name = "email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
         </div>
         
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input name = "password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
         </div>
         

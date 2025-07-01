@@ -6,7 +6,7 @@ if($_SERVER['SERVER_NAME'] == 'localhost'){
     define('DBUSER', 'root');
     define('DBPASS', '123');
 
-    define ('ROOT', 'http://localhost:3000');
+    define ('ROOT', 'http://localhost:3000/public');
 
 }else{
      /**db config **/
