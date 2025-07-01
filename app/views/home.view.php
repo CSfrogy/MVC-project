@@ -123,12 +123,13 @@
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="<?=ROOT?>">Home</a>
                     <a class="nav-link fw-bold py-1 px-0" href="<?=ROOT?>/login">Login</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="<?=ROOT?>/logout"">Logout</a>
                 </nav>
             </div>
         </header>
 
         <main class="px-3">
+            <h4>Good day, <?=$username?></h4>
             <h1>Cover your page.</h1>
             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
             <p class="lead">
