@@ -6,12 +6,13 @@ class Signup
     public function index()
     {
         $user = new User;
-        if ($user->validate($_POST)) {
+        if ($user->validate($_POST)) 
+        {
             $user->insert($_POST);
             redirect('home');
         }
 
-        show($_POST);
-        $this->view('signup');
+        $errors = $user->errors;
+        $this->view('signup',$data);
     }
 }
