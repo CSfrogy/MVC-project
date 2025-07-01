@@ -12,7 +12,7 @@ class Signup
             redirect('home');
         }
 
-        $errors = $user->errors;
+        $data['errors'] = $user->errors;
         $this->view('signup',$data);
     }
 }

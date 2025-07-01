@@ -7,10 +7,10 @@
     <meta name="generator" content="Astro v5.9.2">
     <title>Signin Template · Bootstrap v5.3</title>
     <script src="../assets/js/color-modes.js"></script>
-    <link href="<?=ROOT?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo ROOT?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <meta name="theme-color" content="#712cf9">
-    <link href="<?=ROOT?>/assets/css/sign-in.css" rel="stylesheet">
-    
+    <link href="<?php echo ROOT?>/assets/css/sign-in.css" rel="stylesheet">
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -19,13 +19,13 @@
             -moz-user-select: none;
             user-select: none;
         }
-        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
-        
+
         .b-example-divider {
             width: 100%;
             height: 3rem;
@@ -34,25 +34,25 @@
             border-width: 1px 0;
             box-shadow: inset 0 .5em 1.5em #0000001a, inset 0 .125em .5em #00000026;
         }
-        
+
         .b-example-vr {
             flex-shrink: 0;
             width: 1.5rem;
             height: 100vh;
         }
-        
+
         .bi {
             vertical-align: -.125em;
             fill: currentColor;
         }
-        
+
         .nav-scroller {
             position: relative;
             z-index: 2;
             height: 2.75rem;
             overflow-y: hidden;
         }
-        
+
         .nav-scroller .nav {
             display: flex;
             flex-wrap: nowrap;
@@ -63,7 +63,7 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
-        
+
         .btn-bd-primary {
             --bd-violet-bg: #712cf9;
             --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
@@ -79,16 +79,16 @@
             --bs-btn-active-bg: #5a23c8;
             --bs-btn-active-border-color: #5a23c8;
         }
-        
+
         .bd-mode-toggle {
             z-index: 1500;
         }
-        
+
         .bd-mode-toggle .bi {
             width: 1em;
             height: 1em;
         }
-        
+
         .bd-mode-toggle .dropdown-menu .active .bi {
             display: block !important;
         }
@@ -147,32 +147,38 @@
     <!-- Sign-in Form -->
     <main class="form-signin w-100 m-auto">
     <form method="post">
+
+        <?php if (! empty($errors)): ?>
+            <div class="alert alert-danger">
+                <?php echo implode("<br>", $errors)?>
+            </div>
+        <?php endif; ?>
         <div class="text-center">
             <h1 class="h3 mb-3 fw-normal">Create account</h1>
         </div>
-        
+
         <div class="form-floating">
             <input name = "email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
         </div>
-        
+
         <div class="form-floating">
             <input name = "password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
         </div>
-        
+
         <div class="d-flex justify-content-center align-items-center my-3">
             <input class="form-check-input me-2" type="checkbox" value="1" id="checkDefault" name="terms">
             <label class="form-check-label" for="checkDefault">Accept terms</label>
         </div>
-        
+
         <button class="btn btn-primary w-100 py-2" type="submit">CREATE</button>
-        
+
         <div class="text-center mt-3">
-            <a href="<?=ROOT?>">Home</a>
-            <a href="<?=ROOT?>/login">Login</a>
+            <a href="<?php echo ROOT?>">Home</a>
+            <a href="<?php echo ROOT?>/login">Login</a>
         </div>
-        
+
         <p class="mt-5 mb-3 text-body-secondary text-center">&copy; 2017–2025</p>
     </form>
 </main>
